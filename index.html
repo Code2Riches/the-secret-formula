@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- The Alerter  -->
+<h1>The Alerter</h1>
+
+    <form id="alert">
+        <div>
+            <input id="userInput1" type="text" autocomplete="off" placeholder="Input text here"> 
+            <input id="submitButton1" type="submit">
+        </div>
+    </form>
+<br>
+<br>
+<!-- Sandwich Builder  -->
+<h1>Jailhouse Sandwich Builder</h1>
+    
+    <form id="sandwich">
+        <div>
+            <h3>Choose your bread</h3>
+            <div>
+                <label>White Bread</label>
+                <input id="white-bread" type="radio" name="bread">
+            </div>
+
+            <div>
+                <label>Wholewheat Bread</label>
+                <input id="whole-wheat" type="radio" name="bread">
+            </div>
+
+            <div>
+                <label>Multi-grain Bread</label>
+                <input id="multi-grain" type="radio" name="bread">
+            </div>
+        </div>
+
+        <div>
+            <h3>Choose your meat(s)</h3>
+            <div>
+                <label>Ham</label>
+                <input id="ham" type="checkbox" name="meat">
+            </div>
+            <div>
+                <label>Salami</label>
+                <input id="salami" type="checkbox" name="meat">
+            </div>
+            <div>
+                <label>Bologna</label>
+                <input id="bologna" type="checkbox" name="meat">
+            </div>
+            <div>
+                <label>Mortadella</label>
+                <input id="mortadella" type="checkbox" name="meat">
+            </div>
+        </div>
+
+        <div>
+            <h3>Choose your cheese(s)</h3>
+            <div>
+                <label>American Cheese</label>
+                <input id="amer-cheese" type="checkbox" name="cheese">
+            </div>
+            <div>
+                <label>Mozzarella Cheese</label>
+                <input id="mozz-cheese" type="checkbox" name="cheese">
+            </div>
+            <div>
+                <label>Swiss Cheese</label>
+                <input id="swiss-cheese" type="checkbox" name="cheese">
+            </div>
+
+        </div><br>
+
+        <label>Hit submit and keep the line moving: </label>
+        <input id="submitButton2" type="submit">
+    </form>
+<br>
+<br>
+<!-- Haircut Appointment Scheduler  -->
+<h1>Haircut Appointment Scheduler</h1>
+<!-- 
+    1. date input for haircut appt
+    2. text input to select specific hair cutter
+    3. One set of 2 radio inputs to select long or short hair
+    submit button
+    * add proper labels for each input
+    * upon submit, display alert message: scheduled [DATE] with [haircutter] for [long/short] hair
+ -->
+    <form id="haircut">
+        <div>
+
+            <h3>1. Please pick a date for your haircut</h3>
+            <div>
+                <label>Appointment Date</label>
+                <input id="date" type="date" name="day">
+            </div>
+            <br>
+
+            <h3>2. Pick your hairstylist</h3>
+            <div>
+                <label>Who would you like to cut with? </label>
+            <input id="userInput2" type="text" autocomplete="off" placeholder="Pick your fav stylist">
+            </div>
+            <br>
+
+            <h3>3. Please let us know if you have long or short hair</h3>
+            <div>
+                <label>Short Hair</label>
+                <input id="short-hair" type="radio" name="length" checked="true">
+
+                <label>Long Hair</label>
+                <input id="long-hair" type="radio" name="length" checked="true">
+            </div>
+
+        </div>
+        <br>
+        <label>Please submit your request for scheduling: </label>
+        <input id="submitButton3" type="submit">
+
+    </form>
+<br>
+<br>
+<!-- Create Account  -->
+<h1>Create Account</h1>
+<!-- 
+    1. text input for the user's desired username
+    2. an email input for the user's email
+    3. a password input for the user's password
+    4. a confirm password input that makes the user type their password a second time to confirm it
+    5. a submit button
+    ** Once again, make sure to add proper labels for your inputs.
+    ** When the user submits the form, display an alert with the created user's username and email. As a habit of good security, don't display the user's password.
+ -->
+
+    <form id="account">
+        <div>
+            <h3>Pick a username:</h3>
+            <div>
+            <input id="userName" type="text" autocomplete="off" placeholder="Choose a username">
+            </div>
+            <br>
+        </div>
+        <div>
+            <h3>Enter your email:</h3>
+            <div>
+            <input id="userEmail" type="email" autocomplete="off" placeholder="Email addres">
+            </div>
+            <br>
+        </div>
+        <div>
+            <h3>Enter your password:</h3>
+            <div>
+            <input id="userPassword" type="password" autocomplete="off" placeholder="Your password">
+            </div>
+            <br>
+        </div>
+        <div>
+            <h3>Confirm your password:</h3>
+            <div>
+            <input id="passwordConfirm" type="password" autocomplete="off" placeholder="Confirm password">
+            </div>
+            <br>
+        </div>
+        <label>Please submit when done: </label>
+        <input id="submitButton4" type="submit">
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
